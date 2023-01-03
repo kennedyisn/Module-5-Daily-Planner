@@ -26,13 +26,106 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
+       <!-- This element will anchor the current date I'm making with jQuery. -->
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
+    <div class="container" id="root">
       <!-- Timeblocks go here -->
+      <!-- name added to all textareas to make sure the data from this are is stored-->
+      <!--9 am timeblock-->
+      <div class="hour row time-block">
+        <div class="col-md-1 hour" id="9">
+          9AM
+        </div>
+        <textarea class="col-md-10 description" id="textbox" name="9AM" placeholder="At this time I have to...">
+        </textarea>
+        <button class="saveBtn col-md-1" id="button-9am"><i class="fas fa-save"></i>
+        </button>
+      </div>
+      <!--10 am timeblock-->
+      <div class="hour row time-block">
+        <div class="col-md-1 hour" id="10">
+          10AM
+        </div>
+        <textarea class="col-md-10 description" id="textbox" name="10AM">
+        </textarea>
+        <button class="saveBtn col-md-1" id="button-10am"><i class="fas fa-save"></i>
+        </button>
+      </div>
+      <!--11 am timeblock-->
+      <div class="hour row time-block">
+        <div class="col-md-1 hour" id="11">
+          11AM
+        </div>
+        <textarea class="col-md-10 description" id="textbox" name="11AM">
+        </textarea>
+        <button class="saveBtn col-md-1" id="button-11am"><i class="fas fa-save"></i>
+        </button>
+      </div>
+      <!--12 am timeblock-->
+      <div class="hour row time-block">
+        <div class="col-md-1 hour" id="12">
+          12PM
+        </div>
+        <textarea class="col-md-10 description" id="textbox" name="12PM">
+        </textarea>
+        <button class="saveBtn col-md-1" id="button-12pm"><i class="fas fa-save"></i>
+        </button>
+      </div>
+      <!--1 pm timeblock-->
+      <div class="hour row time-block">
+        <div class="col-md-1 hour" id="13">
+          1PM
+        </div>
+        <textarea class="col-md-10 description" id="textbox" name="1PM">
+        </textarea>
+        <button class="saveBtn col-md-1" id="button-1pm"><i class="fas fa-save"></i>
+        </button>
+      </div>
+      <!--2 pm timeblock-->
+      <div class="hour row time-block">
+        <div class="col-md-1 hour" id="14">
+          2PM
+        </div>
+        <textarea class="col-md-10 description" id="textbox" name="2PM">
+        </textarea>
+        <button class="saveBtn col-md-1" id="button-2pm"><i class="fas fa-save"></i>
+        </button>
+      </div>
+      <!--3 pm timeblock-->
+      <div class="hour row time-block">
+        <div class="col-md-1 hour" id="15">
+          3PM
+        </div>
+        <textarea class="col-md-10 description" id="textbox" name="3PM">
+        </textarea>
+        <button class="saveBtn col-md-1" id="button-3pm"><i class="fas fa-save"></i>
+        </button>
+      </div>
+      <!--4 pm timeblock-->
+      <div class="hour row time-block">
+        <div class="col-md-1 hour" id="16">
+          4PM
+        </div>
+        <textarea class="col-md-10 description" id="textbox" name="4PM">
+        </textarea>
+        <button class="saveBtn col-md-1" id="button-4pm"><i class="fas fa-save"></i>
+        </button>
+      </div>
+      <!--5 pm timeblock-->
+      <div class="hour row time-block">
+        <div class="col-md-1 hour" id="17">
+          5PM
+        </div>
+        <textarea class="col-md-10 description" id="textbox" name="5PM">
+        </textarea>
+        <button class="saveBtn col-md-1" id="button-5pm"><i class="fas fa-save"></i>
+        </button>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
